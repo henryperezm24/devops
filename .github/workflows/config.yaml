@@ -21,7 +21,7 @@ jobs:
   other:
     runs-on: ubuntu-latest
 
-    need: hola
+    needs: hola
 
     steps:
     - name: LS
