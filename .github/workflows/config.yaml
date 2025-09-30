@@ -13,13 +13,15 @@ jobs:
       run: touch hola.txt
 
     - name: Setear Texto
-      run: echo "Hola Mundo" >> hota.txt
+      run: echo "Hola Mundo" >> hola.txt
 
     - name: Mostrar Texto
       run: cat hola.txt
   
   other:
     runs-on: ubuntu-latest
+
+    need: hola
 
     steps:
     - name: LS
